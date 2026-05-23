@@ -45,7 +45,7 @@ The project evaluates whether a lightweight RAG pipeline can improve temporal gr
 
 ```text
 data/
-  manifest/source_manifest_release.csv
+  manifest/source_files_data.csv
   annotations/topic_timestamp_annotations.json
   annotations/annotation_provenance_legend.md
   splits/test.json
@@ -151,7 +151,7 @@ This file explains the meaning of fields such as `heading_origin`, `timestamp_or
 
 The provenance fields are intentionally coarse-grained. They document that headings may have been manually written, normalized from public descriptions, or initialized from public timeline/agenda information and then verified by the authors.
 
-### `data/manifest/source_manifest_release.csv`
+### `data/manifest/source_files_data.csv`
 
 This file maps stable `source_id` values to public source metadata such as source URL, platform/provenance, release decisions, and notes.
 
@@ -174,7 +174,7 @@ This is intentional:
 
 1. It removes local preprocessing traces and downloader-related filename artifacts.
 2. It gives each recording a stable, anonymous ID.
-3. It lets the annotation file link cleanly to `source_manifest_release.csv`.
+3. It lets the annotation file link cleanly to `source_files_data.csv`.
 4. It keeps evaluation reproducible as long as locally reconstructed transcript/chunk files use the same aliases.
 
 These IDs are **not meant to hide the public source**. The source manifest provides public source URLs where available. The aliases are used to avoid exposing local file names and to make the evaluation format stable.
