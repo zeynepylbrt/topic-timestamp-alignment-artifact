@@ -305,7 +305,7 @@ These summaries preserve aggregate metrics but remove transcript excerpts and re
 
 Main 420-query setting:
 
-| Setting | Model | Retrieval / Output | P@1 | P@3 | P@5 | Exact@30s | Avg. MAE |
+| Setting | Model | Retrieval / Output | R@1 | R@3 | R@5 | Exact@30s | Avg. MAE |
 |---|---|---|---:|---:|---:|---:|---:|
 | Baseline | Mistral-7B | Dense + simple timestamp | 0.164 | 0.281 | 0.319 | 0.288 | 836.98 |
 | Baseline | GPT-5.1 | Dense + simple timestamp | 0.164 | 0.281 | 0.319 | 0.286 | 1115.06 |
@@ -316,7 +316,7 @@ Main 420-query setting:
 
 Extended 600-query setting:
 
-| Setting | Model | P@1 | P@3 | P@5 | Exact@30s | Avg. MAE |
+| Setting | Model | R@1 | R@3 | R@5 | Exact@30s | Avg. MAE |
 |---|---|---:|---:|---:|---:|---:|
 | Extended | Mistral-7B + Hybrid BM25/RRF + Chunk-ID | 0.357 | 0.493 | 0.563 | 0.373 | 632.01 |
 
