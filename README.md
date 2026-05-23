@@ -1,4 +1,4 @@
-# Heading-to-Timestamp Alignment in Long-Form Public Speech Recordings
+# Heading-to-Timestamp Alignment in Long-Duration Public Speech and Municipal Meetings Recordings 
 
 This repository contains an anonymized EMNLP artifact for **heading-to-timestamp alignment**: given a natural-language topic heading, the system returns the timestamp where that topic starts in a long transcript.
 
