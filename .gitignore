@@ -1,0 +1,49 @@
+# Secrets and local configuration
+.env
+*.env
+.env.*
+!.env.example
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# macOS / editor artifacts
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and temporary outputs
+*.log
+logs/
+tmp/
+temp/
+
+# Local media files and derived ASR artifacts not released
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.mov
+*.mkv
+*.webm
+audio_wav/
+processed_data/
+
+# Derived data not released in this artifact
+data/chroma_db/
+data/chunked/
+data/annotations/manuel_timestamped_data/
+data/processed/
+
+# Raw result files may contain transcript excerpts; release only sanitized summaries
+results/raw/
+*_raw.json
+*_with_excerpts.json

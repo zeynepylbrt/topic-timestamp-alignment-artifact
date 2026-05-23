@@ -1,0 +1,5 @@
+ollama:
+  stream: false
+openai:
+  max_completion_tokens: 200
+notes: Exact decoding settings should be reported with each model run when API-level defaults change.

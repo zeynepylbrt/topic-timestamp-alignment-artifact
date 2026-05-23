@@ -1,0 +1,11 @@
+chromadb
+sentence-transformers
+numpy
+requests
+python-dotenv
+tiktoken
+nltk
+scipy
+openai
+pandas
+pyyaml

@@ -1,0 +1,11 @@
+You are matching a user-provided heading to where it starts in a transcript.
+
+Heading: "{heading}"
+
+Candidates (ID | timestamp | excerpt):
+{candidate_block}
+
+Rules:
+- Output only the timestamp of the best candidate in HH:MM:SS format.
+- Do not output a candidate ID.
+- Do not add explanations.

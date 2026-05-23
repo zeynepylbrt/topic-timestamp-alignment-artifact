@@ -1,0 +1,15 @@
+You are given retrieved transcript chunks from a long-form recording.
+Each transcript line starts with a timestamp in brackets [HH:MM:SS].
+
+Context:
+{context}
+
+Question: {question}
+
+Task:
+Find the start timestamp of the topic: "{heading}".
+
+Rules:
+- Output only one timestamp in HH:MM:SS format.
+- Use a timestamp that appears in the transcript context.
+- Do not add explanations.

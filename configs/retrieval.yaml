@@ -1,0 +1,9 @@
+chunking:
+  strategy: time_window
+  window_sec: 90
+  overlap_sec: 45
+retrieval:
+  collection_name: meetings
+  mode: hybrid_bm25
+  output_mode: chunk_id
+  disable_stage2_fallback: true
